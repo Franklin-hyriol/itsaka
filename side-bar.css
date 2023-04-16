@@ -1,0 +1,191 @@
+#side-bar{
+	background-color: var(--primary-color);
+	width: 15%;
+	min-height: 100vh;
+	position: fixed;
+	text-align: center;
+    box-shadow: -3px -3px 5px var(--top-shadow), 3px 3px 5px var(--bottom-shadow);
+}
+
+/*----------logo----------*/
+
+.logo{
+	text-decoration: none;
+}
+
+.logo div{
+	margin-top: 5vh; 
+}
+
+.logo img{
+	width: 65%;
+	height: auto;
+}
+
+.logo p{
+	color: var(--text-gray-color);
+	font-size: 1.5em; 
+	font-weight: bold;
+	margin-top: 1vh;
+}
+
+.logo p::first-letter{
+	font-size: 1.6em; 
+}
+
+/*------------menu---------*/
+
+.menu{
+	margin-top: 6vh; 
+}
+
+.menu div{
+	margin-top: 0.2vh;
+	margin-bottom: 0.2vh;
+	padding-top: 1.5vh;
+	padding-bottom: 1.5vh; 
+}
+
+.produit-content div{
+	margin-top: 0.2vh;
+	margin-bottom: 0.2vh;
+	padding-top: 1.5vh;
+	padding-bottom: 1.5vh;
+}
+
+.produit > span{ 
+	color: var(--text-gray-color);
+	font-size: 1.2em; 
+	font-weight: bold; 
+	text-decoration: underline;
+}
+
+.menu a{
+	text-decoration: none; 
+	color: var(--text-gray-color);
+	font-size: 1em; 
+	font-weight: bold; 
+}
+
+.menu a div:hover{
+	background-color: var(--primary-btn-hover);
+	color: var(--text-white-color);
+}
+
+.produit-content a div:hover{
+	background-color: var(--primary-btn-hover);
+	color: var(--text-white-color);
+}
+
+.btn-sidebar-connexion div:hover{
+	color: var(--btn-blue-color) !important;
+}
+
+.btn-sidebar-inscription div:hover{
+	color: var(--btn-pink-color) !important;
+}
+
+.menu a div img{
+	margin-left: auto;
+	margin-right: auto;  
+	width: 50%;
+	height: auto;
+}
+
+/*---------Media query-------*/
+
+
+@media (max-width: 480px) {
+
+	#side-bar{
+		width: 10%;
+	}
+
+	.search img{
+		display: block;
+	}
+
+	.search input{
+		display: none;
+	}
+
+	.logo p{
+		display: none;
+	}
+
+	.menu img{
+		display: block;
+	}
+
+	.menu span{
+		display: none;
+	}
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+	#side-bar{
+		width: 10%;
+	}
+
+	.search img{
+		display: block;
+	}
+
+	.search input{
+		display: none;
+	}
+
+	.logo p{
+		display: none;
+	}
+
+	.menu img{
+		display: block;
+	}
+
+	.menu span{
+		display: none;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+	.search img{
+		display: none;
+	}
+
+	.search input{
+		display: inline;
+	}
+
+	.menu img{
+		display: none;
+	}
+
+	.menu span{
+		display: block;
+	}
+}
+
+
+@media (min-width: 1025px){
+	.search img{
+		display: none;
+	}
+
+	.search input{
+		display: inline;
+	}
+
+	.menu img{
+		display: none;
+	}
+
+	.menu span{
+		display: block;
+	}
+}
+

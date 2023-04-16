@@ -1,0 +1,148 @@
+#contact-apropos{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 18.5%;
+    margin-top: 50px;  
+    background-color: var(--primary-color);
+    box-shadow: -3px -3px 3px var(--top-shadow), 2px 2px 3px var(--bottom-shadow); 
+    padding-bottom: 25px;
+    border-radius: 20px;
+}
+
+/*------info-----*/
+
+.info{
+    flex-basis: 50%;
+    margin-top: 50px;  
+    color: var(--text-gray-color);
+    text-align: justify;
+}
+
+.info h2{
+    text-align: center;
+    font-size: 25pt;
+}
+
+.info p{
+    margin-left: 10px; 
+    margin-right: 10px; 
+}
+
+.s-logo{
+    margin-top: 180px; 
+    text-align: center;
+}
+
+.s-logo img{
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+}
+
+.s-logo a{
+    font-size: 15pt;  
+    margin-right: 15px;
+    text-decoration: none; 
+    color: var(--text-gray-color);
+}
+
+/*------contact-----*/
+
+.contact{
+    flex-basis: 50%;
+    margin-top: 50px; 
+    text-align: center;
+    color: var(--text-gray-color); 
+}
+
+.contact h2{
+    font-size: 25pt;
+}
+
+.user-name, .adress-email, .phone, .region{
+    width: 38%;
+    border: none;
+    border-radius: 20px;
+    margin: 5px 0 5px 5px;
+    padding: 0 0 2px 10px;
+    color: var(--text-gray-color);
+    font-size: 20pt; 
+    font-weight: bold; 
+    background-color: var(--input-back-color); 
+}
+
+.objet, .message{
+    width: 80%;
+    border: none;
+    border-radius: 20px;
+    margin: 5px 0 5px 5px;
+    padding: 0 0 2px 10px;
+    color: var(--text-gray-color);
+    font-size: 20pt; 
+    font-weight: bold; 
+    background-color: var(--input-back-color);  
+}
+
+.message{
+    height: 41px;
+}
+
+.champ-d-contact ::placeholder{
+    color: var(--text-gray-color);
+    font-size: 12pt;
+}
+
+.champ-d-contact p{
+    margin-left: 10px; 
+    margin-right: 10px; 
+}
+
+.user-name:focus, .adress-email:focus, .phone:focus, .region:focus, .objet:focus, .message:focus{
+    outline: none;
+    box-shadow: inset 3px 3px 4px var(--input-top-shadow), inset -3px -3px 4px var(--input-back-shadow);
+}
+
+.envoyer-btn{
+    margin-top: 50px;    
+    padding: 15px 20px 15px 20px;
+    background-color: var(--btn-blue-color); 
+    color: var(--text-white-color);
+    border: none;
+    font-size: 12pt;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.envoyer-btn:hover{
+    background-color: var(--btn-blue-hover);
+}
+
+/*----media query---*/
+
+
+@media (max-width: 480px) {
+    #contact-apropos{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #contact-apropos{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    #contact-apropos{
+        display: flex;
+        flex-direction: row;
+        margin-left: 17.5%;
+    }
+}

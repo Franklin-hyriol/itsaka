@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Itsaka</title>
+	<link rel="stylesheet" href="container.css">
+	<link rel="stylesheet" href="side-bar.css">
+	<link rel="stylesheet" href="payment.css">
+	<link rel="icon" href="icons/logo.png" type="image/x-icon">
+</head>
+<body>
+	<div id="container">
+		<div id="side-bar">
+
+			<a href="index.html" class="logo">
+				<div>
+					<img src="icons/logo.png" alt="icon logo">
+					<p>Itsaka</p>						
+				</div>
+			</a>
+
+			<div class="menu">
+				<a href="index.html">
+					<div>
+						<span>Accueil</span>
+						<img src="icons/accueil.png" alt="icon accueil">						
+					</div>
+				</a>
+
+				<div class="produit">
+					<span>Nos produits</span>
+					<div class="produit-content">
+						<a href="adidas.html">
+							<div>
+								<span>Adidas</span>
+								<img src="icons/adidas.png" alt="logo adidas">								
+							</div>
+						</a>
+
+						<a href="nike.html">
+							<div>
+								<span>Nike</span>
+								<img src="icons/nike.png" alt="logo nike">								
+							</div>
+						</a>
+
+						<a href="puma.html">
+							<div>
+								<span>Puma</span>
+								<img src="icons/puma.png" alt="logo puma">								
+							</div>
+						</a>
+
+						<a href="converse.html">
+							<div>
+								<span>Converse</span>
+								<img src="icons/converse.png" alt="logo converse">								
+							</div>
+						</a>		
+					</div>
+				</div>
+
+				<a href="connexion.html" class="btn-sidebar-connexion">
+					<div>
+						<span>Connexion</span> 
+						<img src="icons/connexion.png" alt="icon connextion">						
+					</div>
+				</a>
+
+				<a href="inscription.html" class="btn-sidebar-inscription">
+					<div>
+						<span>Inscription</span>
+						<img src="icons/inscription.png" alt="icon inscription">						
+					</div>
+				</a>
+
+				<a href="apropos.html">
+					<div>
+						<span>Apropos</span>
+						<img src="icons/apropos.png" alt="icon apropos">
+					</div>
+				</a>
+			</div>
+		</div><!-- end side-bar -->
+
+		<div id="payment">
+			<div class="logo-partenaire">
+				<div class="titre">
+					<img src="icons/credit-card.png" alt="image cart de credit">	
+					<h2>Page de payement</h2>		
+				</div>
+				<img src="icons/master.png" alt="logo master card">
+				<img src="icons/visa.png" alt="logo visa">
+				<img src="icons/paypal.png" alt="logo paypal">
+			</div>
+			<div class="information">
+				<form class="send-payment">
+					<input type="number" class="card-number" placeholder="Numéro de carte"><br>
+					<input type="text" class="nom" placeholder="Nom"><br>
+					<input type="text" class="date-fin" placeholder="Date d'expiration (jj/mm/aaaa)"><br>
+				  	<input type="text" class="adress-email" placeholder="Adress e-mail"><br>
+				  	<input type="submit" value="Payer" class="payer">
+				</form> 
+			</div>
+		</div>
+	</div>
+</html>

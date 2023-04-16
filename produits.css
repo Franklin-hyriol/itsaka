@@ -1,0 +1,297 @@
+#produit{
+    width: 84%;
+    margin-left: 16%;
+    display: flex;
+    flex-direction: column;
+}
+
+.animation{
+	width: 90%;
+	height: 550px;
+	position: relative;
+    margin: 50px auto 50px auto;
+	background-color: var(--primary-color); 
+    box-shadow: -3px -3px 3px var(--top-shadow), 2px 2px 3px var(--bottom-shadow); 
+	border-radius: 20px;     
+}
+
+
+.animation img{
+	position: absolute; 
+	width: 80%;
+	height: 100%;
+	left: 10%;  
+}
+
+.animation .show-1{
+	opacity: 1;
+	animation: show-ch-1 infinite 15s;
+}
+
+@keyframes show-ch-1{  
+	0%{
+		opacity: 0;
+	}
+
+	15%{
+		opacity: 1;
+	}
+
+	30%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 0;
+	}
+}
+
+.animation .show-2{
+	opacity: 0;
+	animation: show-ch-2 infinite 15s;
+}
+
+@keyframes show-ch-2{  
+	0%{
+		opacity: 0;
+	}
+
+	35%{
+		opacity: 0;
+	}
+
+	50%{
+		opacity: 1;
+	}
+
+	65%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 0;
+	}
+}
+
+.animation .show-3{
+	opacity: 0;
+	animation: show-ch-3 infinite 15s;
+}
+
+@keyframes show-ch-3{  
+	0%{
+		opacity: 0;
+	}
+
+	70%{
+		opacity: 0;
+	}
+
+	85%{
+		opacity: 1;
+	}
+
+	95%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 0;
+	}
+}
+
+
+/*----- Exemplaire---*/
+
+
+.exemplaire{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;  
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.exemplaire > div{
+	background-color: var(--primary-color);
+    box-shadow: -4px -4px 5px var(--top-shadow), 3px 3px 5px var(--bottom-shadow); 
+    min-width: 260px;
+    min-height: 400px;
+    margin: 20px auto 20px auto;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.exemplaire > div:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    box-shadow: -4px -4px 6px var(--top-shadow), 3px 3px 6px var(--bottom-shadow);
+}
+
+.img-ch{
+    width: 240px;
+    height: 210px;
+    margin: 20px auto 10px auto;
+    text-align: center;
+}
+
+.img-ch img{
+    width: 210px;
+    height: auto;
+    transition: all 0.3s ease-in-out;  
+}
+
+.exemplaire > div:hover .img-ch img{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.info-ch{
+    width: 240px;
+    height: 150px;
+    background-color: var(--primary-color); 
+    box-shadow: -3px -3px 3px var(--top-shadow), 2px 2px 3px var(--bottom-shadow);
+    margin: 5px auto 5px auto;
+    border-radius: 20px;
+    text-align: center;
+    color: var(--text-gray-color);
+}
+
+.exemplaire > div:hover .info-ch{
+    color: var(--text-white-color);
+}
+
+.title-ch{
+    font-size: 25pt; 
+    font-weight: bold;
+    padding: 5px 0 2px 0;
+}
+
+.prix-ch{
+    padding: 2px 0 2px 0;
+}
+
+.prix-actu-ch{
+    font-size: 20pt;
+}
+
+.prix-br-ch{
+    font-size: 15pt;
+    text-decoration: line-through;
+}
+
+.note-ch img{
+    width: 20px;
+    height: 20px;
+}
+
+.note-ch{
+    margin: 2px 0 12px 0;
+}
+
+.ch-btn{
+    margin: 12px 0 0 0;
+}
+
+.ch-btn a{
+    text-decoration: none;
+    padding: 8px 13px 8px 13px;
+    border-radius: 12px;
+}
+
+.btn-panier{
+    color: var(--text-white-color);
+    background-color: var(--btn-pink-color);
+}
+
+.btn-acheter{
+    color: var(--text-white-color);
+    background-color: var(--btn-blue-color);  
+}
+
+.btn-panier:hover{
+    background-color: var(--btn-pink-hover);
+}
+
+.btn-acheter:hover{
+    background-color: var(--btn-blue-hover); 
+}
+
+/*-----info----*/
+
+.info{
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 50px;   
+    background-color: var(--primary-color);
+    border-radius: 20px; 
+    color: var(--text-gray-color);
+   	box-shadow: -4px -4px 6px var(--top-shadow), 3px 3px 6px var(--bottom-shadow);
+    text-align: justify;
+}
+
+.info h2{
+	font-size: 20pt;
+	text-decoration: underline;
+	margin: 5px 0px 0px 10px;
+}
+
+.info p{
+	margin: 5px 10px 10px 10px;
+}
+
+
+/*--------footer----------*/
+
+.footer{
+    width: 90%;
+    height: 40px;
+    background-color: var(--primary-color); 
+    margin: 50px auto 30px auto; 
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: -4px -4px 5px var(--top-shadow), 3px 3px 5px var(--bottom-shadow);
+}
+
+.footer img{
+    width: 32px;
+    height: 32px;
+    margin: 4px 10px 4px 10px; 
+}
+
+/*---------Media query-------*/
+
+@media (max-width: 480px) {
+    #produit{
+        width: 90%;  
+        margin-left: 10%;    
+    }
+
+    .animation{
+    	height: 250px;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #produit{
+        width: 90%;  
+        margin-left: 10%;    
+    }
+
+    .animation{
+    	height: 300px;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    #produit{
+        width: 95%;  
+        margin-left: 16%;    
+    }
+
+}

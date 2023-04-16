@@ -1,0 +1,148 @@
+#payment{
+    width: 35%;
+    display: flex; 
+    flex-direction: column;
+    margin-left: 40%;
+    margin-top: 50px; 
+    padding-bottom: 25px;
+    background-color: var(--primary-color); 
+    border-radius: 20px;
+    box-shadow: -3px -3px 3px var(--top-shadow), 2px 2px 3px var(--bottom-shadow);
+}
+
+
+/*----logo-----*/
+
+
+.logo-partenaire{
+    flex-basis: 20%;
+    text-align: center;
+    margin-top: 15px; 
+
+}
+
+.titre{
+    width: 80%;
+    height: auto;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.titre img{
+    width: 25%;
+    height: auto;
+}
+
+.titre h2{
+    color: var(--text-gray-color);
+    font-size: 25pt;
+}
+
+.logo-partenaire > img{
+    width: 8%;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 15px; 
+}
+
+/*----information-----*/
+.information{
+    flex-basis: 80%;
+    margin-top: 25px;  
+}
+
+.send-payment{
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.send-payment input{
+    width: 80%;
+    color: var(--text-gray-color);
+    font-size: 20pt; 
+    font-weight: bold; 
+}
+
+.send-payment ::placeholder{
+    color: var(--text-gray-color);
+    font-size: 15pt;
+}
+
+
+
+.card-number, .nom, .date-fin, .adress-email{
+    width: 80%;
+    border: none;
+    margin: 5px 0 5px 0;
+    padding: 5px 0 5px 35px;
+    border-radius: 20px;
+}
+
+.card-number:focus, .nom:focus, .date-fin:focus, .adress-email:focus{
+    outline: none;
+    box-shadow: inset 3px 3px 4px var(--input-top-shadow), inset -3px -3px 4px var(--input-back-shadow);
+}
+
+.card-number{
+    background: var(--input-back-color) url('icons/password.png') 10px no-repeat;
+}
+
+.card-number::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.nom{
+    background: var(--input-back-color) url('icons/login.png') 10px no-repeat;
+}
+
+.date-fin{
+    background: var(--input-back-color) url('icons/calendrier.png') 10px no-repeat;
+}
+
+
+.adress-email{
+    background: var(--input-back-color) url('icons/email.png') 10px no-repeat;
+}
+
+.payer{
+    margin-top: 25px; 
+    width: 80%;
+    padding: 5px 0 5px 0;
+    background-color: var(--btn-blue-color); 
+    color: var(--text-white-color) !important;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.payer:hover{
+    background-color: var(--btn-blue-hover);
+}
+
+/*---media query----*/
+
+
+@media (max-width: 480px) {
+    #payment{
+        width: 80%;
+        margin-left: 15%;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #payment{
+        width: 45%;
+        margin-left: 30%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    #payment{
+        width: 35%;
+    }
+}

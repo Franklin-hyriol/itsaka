@@ -1,0 +1,71 @@
+:root{
+    --back-color: #0E0F1A;
+    --primary-color: #1A1B25cc;
+    --primary-linear: #090909;
+    --primary-btn-hover: #212330;
+    --text-white-color: #FFFFFF;
+    --input-back-color: #0E0F1A;
+    --input-top-shadow: #040509;
+    --input-back-shadow: #21233E;
+    --btn-blue-color: #0B78E3;
+    --btn-blue-hover: #0988FF;
+    --text-gray-color: #B8B8B8;
+    --star-yellow-color: #ECC416;
+    --btn-pink-color: #FF2367;
+    --btn-pink-hover: #FF2F94;
+    --top-shadow: #313346;
+    --bottom-shadow: #000000;
+}
+
+*{
+    font-family: calibri, serif;
+}
+
+body{
+	background-color: var(--back-color);
+	margin: 0px;
+	background-image: url('icons/pad.png'); 
+	background-attachment: fixed;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 480px) {
+    #container{
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #container{
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    #container{
+        width: 100%;
+	}
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px){
+    #container{
+        width: 90%;
+		margin-left:auto;
+    	margin-right:auto;
+	}
+}
+
+@media (min-width: 1281px) {
+    #container{
+        width: 90%;
+		margin-left:auto;
+    	margin-right:auto;
+    }
+}
